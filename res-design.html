@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Landing Page Design</title>
+    <style>
+        body {
+            padding: 20px;
+        }
+        .one {
+            text-align: center;
+        }
+        button {
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            background-color: black;
+            color: #fff;
+            cursor: pointer;
+        }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin-top: 20px;
+        }
+        .card-1 {
+            background-color: grey;
+            border-radius: 10px;
+            width: 50%;
+            padding: 10px;
+            color: #fff;
+        }
+        footer {
+            text-align: center;
+        }
+
+        @media (max-width: 700px) {
+            .cards {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+            .card-1 {
+                margin-top: 10px;
+            }
+            footer {
+            text-align: start;
+        }
+        }
+    </style>
+</head>
+<body>
+    <section class="one">
+        <h1>Esther Travels</h1>
+        <p>Fly the friendly skies</p>
+        <button>Shop Now!</button>
+    </section>
+
+    <section>
+        <div class="cards">
+            <div class="card-1">
+                <p>😎</p>
+                <h5>Cool Sunglasses</h5>
+                <p>Bright Future Ahead, Stay up</p>
+            </div>
+
+            <div class="card-1">
+                <p>😎</p>
+                <h5>Cool Sunglasses</h5>
+                <p>Bright Future Ahead, Stay up</p>
+            </div>
+
+            <div class="card-1">
+                <p>😎</p>
+                <h5>Cool Sunglasses</h5>
+                <p>Bright Future Ahead, Stay up</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>Email: osooluwaajibola@gmail.com</p>
+        <p>Phone: 08134502886</p>
+        <p>Social Media: Osooluwa Ajibola</p>
+        <p>Coppyright &copy; Osooluwa 2025</p>
+    </footer>
+</body>
+</html>
